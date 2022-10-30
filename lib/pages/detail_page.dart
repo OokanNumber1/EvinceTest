@@ -1,4 +1,5 @@
 import 'package:audioplayers/audioplayers.dart';
+import 'package:dio/dio.dart';
 import 'package:evince_test/model/audio.dart';
 import 'package:evince_test/services/network_service.dart';
 import 'package:evince_test/services/player_service.dart';
@@ -13,9 +14,9 @@ class DetailsPage extends StatefulWidget {
 }
 
 class _DetailsPageState extends State<DetailsPage> {
-  final audioService = AudioService();
+  final audioService = AudioService(AudioPlayer());
 
-  final networkService = NetworkService();
+  final networkService = NetworkService(Dio());
   double downloadProgress = 0;
 
   @override

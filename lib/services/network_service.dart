@@ -5,8 +5,8 @@ import 'package:flutter_file_dialog/flutter_file_dialog.dart';
 import 'package:path_provider/path_provider.dart';
 
 class NetworkService {
-  NetworkService();
-  final dioClient = Dio();
+  NetworkService(this.dioClient);
+  final Dio dioClient ;
   Future<List<Audio>> getAudios() async {
     try {
       final response = await dioClient

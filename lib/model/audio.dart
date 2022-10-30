@@ -38,4 +38,23 @@ class Audio {
   String toString() {
     return 'Audio(title: $title, description: $description, year: $year, url: $url)';
   }
+
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+  
+    return other is Audio &&
+      other.title == title &&
+      other.description == description &&
+      other.year == year &&
+      other.url == url;
+  }
+
+  @override
+  int get hashCode {
+    return title.hashCode ^
+      description.hashCode ^
+      year.hashCode ^
+      url.hashCode;
+  }
 }

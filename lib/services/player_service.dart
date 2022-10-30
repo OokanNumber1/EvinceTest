@@ -1,8 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 
 class AudioService {
-  AudioService();
-  final audioPlayer = AudioPlayer();
+  AudioService(this.audioPlayer);
+  final AudioPlayer audioPlayer ;
   bool isPlaying = false;
   Duration duration = Duration.zero;
   Duration position = Duration.zero;

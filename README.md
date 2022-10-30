@@ -1,16 +1,11 @@
 # evince_test
 
-A new Flutter project.
+A Flutter Test Project.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+This is a project that :
+- calls an API that return details of media file.
+- displays the media details.
+- displays a details page when one of the detail's card is clicked.
+- streams the media file and downloads the media file (depending on the option chosen).
+# Demo record
+![screen_record](screen_recorder.mp4)

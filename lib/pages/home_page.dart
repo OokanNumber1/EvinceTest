@@ -1,3 +1,4 @@
+import 'package:dio/dio.dart';
 import 'package:evince_test/pages/detail_page.dart';
 import 'package:evince_test/services/network_service.dart';
 import 'package:flutter/material.dart';
@@ -12,7 +13,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final networkService = NetworkService();
+  final networkService = NetworkService(Dio());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
