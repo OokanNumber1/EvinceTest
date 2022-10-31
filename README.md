@@ -7,5 +7,8 @@ This is a project that :
 - displays the media details.
 - displays a details page when one of the detail's card is clicked.
 - streams the media file and downloads the media file (depending on the option chosen).
+
 # Demo record
-![screen_record](screen_recorder.mp4)
+
+https://user-images.githubusercontent.com/88977598/198908410-a8be751f-42e7-4f48-aed5-7e0fcfccbe57.mp4
+
